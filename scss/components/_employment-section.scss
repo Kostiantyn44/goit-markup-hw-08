@@ -1,0 +1,41 @@
+.employment {
+    padding-top: 0;
+    
+    &__title {
+        margin-bottom: 50px;
+
+        color: var(--secondary-text-color);
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item+&__item {
+        margin-left: 30px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: var(--white-text);
+        background-color: rgba(47, 48, 58, 0.8);
+        padding: 27px 0;
+        width: 100%;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

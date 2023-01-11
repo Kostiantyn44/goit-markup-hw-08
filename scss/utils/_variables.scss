@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #2196f3;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: hsl(235, 10%, 21%);
+    --third-background-color: #f5f4fa;
+    --white-text: #ffffff;
+    --black: #000000;
+    --button-color-active: #188ce8;
+    --color-for-adress: rgb(100%, 100%, 100%, 60%);
+    --color-border: #ececec;
+    --color-secondary-border: #eeeeee;
+    --card-set-gap: 30px;
+    --hero-back: rgba(47, 48, 58, 0.4);
+    --color-icons: #afb1b8;
+}

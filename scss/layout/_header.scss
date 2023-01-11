@@ -1,0 +1,20 @@
+.header {
+    background-color: var(--primary-background-color);
+    border-bottom: solid 1px var(--color-border);
+
+    &__nav {
+            display: flex;
+            align-items: center;
+        }
+    &__logo {
+            margin-right: 93px;    
+            color: var(--black);
+        }
+    &__conteiner {
+            display: flex;
+        }
+}
+
+.header a {
+    text-decoration: none;
+}
