@@ -1,57 +1,65 @@
-.activities{
-    &__list {
-        display: flex;
-    }
+.activities {
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
 
-    &__title {
-        margin-bottom: 10px;
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 
-        color: var(--secondary-text-color);
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-    }
+  &__text {
+    margin-bottom: 0;
 
-    &__text {
-        margin-bottom: 0;
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+  }
 
-        color: var(--primary-text-color);
-        font-size: 14px;
-        line-height: 1.7;
-    }
+  &__item {
+    flex-basis: calc(100% / 4);
+  }
 
-    &__item {
-        flex-basis: calc(100% / 4);
-    }
+  &__item + &__item {
+    margin-top: 30px;
+  }
 
-    &__item+&__item {
-        margin-left: 30px;
-    }
+  &__item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: var(--third-background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
 
-    &__item::before {
-        display: block;
-        content: '';
-        height: 120px;
-        background-color: var(--third-background-color);
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 30px;
-        border-radius: 4px;
-    }
-    
-    &__icon-antenna::before {
+  &__icon-antenna::before {
     background-image: url(../imeges/antenna.svg);
+  }
+
+  &__icon-clock::before {
+    background-image: url(../imeges/clock.svg);
+  }
+
+  &__icon-diagram::before {
+    background-image: url(../imeges/diagram.svg);
+  }
+
+  &__icon-astronaut::before {
+    background-image: url(../imeges/astronaut.svg);
+  }
+  @media (min-width: 768px) {
+    text-align: left;
+
+    &__list {
+      display: flex;
     }
 
-    &__icon-clock::before {
-        background-image: url(../imeges/clock.svg);
+    &__item + &__item {
+      margin-left: 30px;
     }
-
-    &__icon-diagram::before {
-        background-image: url(../imeges/diagram.svg);
-    }
-
-    &__icon-astronaut::before {
-        background-image: url(../imeges/astronaut.svg);
-    }
+  }
 }

@@ -1,32 +1,37 @@
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--secondary-background-color);
+  color: var(--white-text);
+  background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
+    url('../imeges/background-hero.jpg');
+  max-width: 1600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    margin-bottom: 30px;
+
+    color: var(--white-text);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--secondary-background-color);
-    color: var(--white-text);
-    background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
-        url('../imeges/background-hero.jpg');
-    max-width: 1600px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    &__title {
-      margin-bottom: 30px;
-  
-      color: var(--white-text);
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.4;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-  
-    &__button {
-      display: block;
-      margin: 0 auto;
-      padding: 10px 32px;
-    }
+  }
 }
-
