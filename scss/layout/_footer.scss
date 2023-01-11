@@ -1,85 +1,132 @@
 .footer {
-    background-color: var(--secondary-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  &__information {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--white-text);
+  }
+
+  &__adress-link {
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--color-for-adress);
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+  }
+
+  &__adress-link:hover,
+  &__adress-link:focus {
+    color: var(--accent-color);
+  }
+
+  &__adress-item + &__adress-item {
+    margin-top: 9px;
+  }
+
+  &__adress-link--white {
+    color: var(--white-text);
+  }
+  &__social-networks {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__networks-title {
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__networks-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__networks-link + &__networks-link {
+    margin-left: 10px;
+  }
+
+  &__networks-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgb(255, 255, 255, 10%);
+  }
+  &__networks-link:hover,
+  &__networks-link:focus {
+    background-color: var(--accent-color);
+  }
+  &__networks-icon {
+    fill: #ffffff;
+  }
+  &__mailing {
+    text-align: center;
+  }
+  &__mailing-form {
+    justify-content: center;
+  }
+  &__mailing-button {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    &__conteiner-tablet {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+    &__information {
+      margin-right: 165px;
+    }
+  }
+  @media (min-width: 1200px) {
     &__conteiner {
-        display: flex;
-        align-items: baseline;
+      display: flex;
+      align-items: baseline;
+    }
+    &__conteiner-tablet {
+      display: flex;
+      align-items: baseline;
     }
 
     &__information {
-        width: 231px;
-    }
-
-    &__logo {
-        display: block;
-        margin-bottom: 20px;
-
-        color: var(--white-text);
-    }
-
-    &__adress-link {
-        display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        color: var(--color-for-adress);
-        font-size: 14px;
-        line-height: 1.7;
-        font-style: normal;
-    }
-
-    &__adress-link:hover,
-    &__adress-link:focus {
-        color: var(--accent-color);
-    }
-
-    &__adress-item+&__adress-item {
-        margin-top: 9px;
-    }
-
-    &__adress-link--white {
-        color: var(--white-text);
+      width: 231px;
+      text-align: left;
+      margin-right: 94px;
     }
     &__social-networks {
-            margin-left: 70px;
+      text-align: left;
     }
-    
-    &__networks-title {
-        margin-bottom: 20px;
-        text-decoration: none;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
+    &__mailing {
+      text-align: left;
     }
-    
-    &__networks-list {
-        display: flex;
+    &__mailing-form {
+      display: flex;
+      align-items: center;
     }
-    
-    &__networks-link+&__networks-link {
-        margin-left: 10px;
+    &__mailing-button {
+      margin-top: 0;
     }
-    
-    &__networks-link {
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        background-color: rgb(255, 255, 255, 10%);
-    }
-    &__networks-link:hover,
-    &__networks-link:focus {
-        background-color: var(--accent-color);
-    }
-    &__networks-icon {
-        fill: #ffffff;
-    }
+  }
 }
 
 .footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
