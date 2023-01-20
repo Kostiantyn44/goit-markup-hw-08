@@ -29,8 +29,8 @@
 
   &__stuff-img {
     margin: 0 auto;
-    width: 450px;
-    height: 460px;
+    // width: 450px;
+    // height: 460px;
   }
 
   &__content {
@@ -81,10 +81,10 @@
     fill: currentColor;
   }
   @media (min-width: 768px) {
-    &__stuff-img {
-      width: 354px;
-      height: 374px;
-    }
+    // &__stuff-img {
+    //   width: 354px;
+    //   height: 374px;
+    // }
     &__item {
       flex-basis: calc(100% / 2 - var(--card-set-gap));
     }
@@ -101,9 +101,9 @@
       flex-basis: calc(100% / 4 - var(--card-set-gap));
     }
 
-    &__stuff-img {
-      width: 270px;
-      height: 260px;
-    }
+    // &__stuff-img {
+    //   width: 270px;
+    //   height: 260px;
+    // }
   }
 }

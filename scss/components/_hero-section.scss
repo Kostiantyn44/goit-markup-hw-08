@@ -3,13 +3,20 @@
   padding-bottom: 118px;
   background-color: var(--secondary-background-color);
   color: var(--white-text);
-  background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
-    url('../imeges/background-hero.jpg');
   max-width: 1600px;
   margin: 0 auto;
+  background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
+    url('/imeges/hero-section/background-hero-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
+      url('/imeges/hero-section/background-hero-mobile@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   &__title {
     margin-bottom: 30px;
@@ -28,10 +35,36 @@
     margin: 0 auto;
     padding: 10px 32px;
   }
+  @media (min-width: 768px) {
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
+      url('/imeges/hero-section/background-hero-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
+        url('/imeges/hero-section/background-hero-tablet@2x.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
   @media (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.4;
     padding-top: 200px;
     padding-bottom: 200px;
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
+      url('/imeges/hero-section/background-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background: linear-gradient(to right, var(--hero-back), var(--hero-back)),
+        url('/imeges/hero-section/background-hero@2x.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   }
 }

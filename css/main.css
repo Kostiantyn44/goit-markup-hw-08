@@ -902,13 +902,22 @@ p {
   padding-bottom: 118px;
   background-color: var(--secondary-background-color);
   color: var(--white-text);
-  background: -webkit-gradient(linear, left top, right top, from(var(--hero-back)), to(var(--hero-back))), url("../imeges/background-hero.jpg");
-  background: linear-gradient(to right, var(--hero-back), var(--hero-back)), url("../imeges/background-hero.jpg");
   max-width: 1600px;
   margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(var(--hero-back)), to(var(--hero-back))), url("/imeges/hero-section/background-hero-mobile.jpg");
+  background: linear-gradient(to right, var(--hero-back), var(--hero-back)), url("/imeges/hero-section/background-hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background: -webkit-gradient(linear, left top, right top, from(var(--hero-back)), to(var(--hero-back))), url("/imeges/hero-section/background-hero-mobile@2x.jpg");
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)), url("/imeges/hero-section/background-hero-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 .hero__title {
   margin-bottom: 30px;
@@ -925,12 +934,44 @@ p {
   margin: 0 auto;
   padding: 10px 32px;
 }
+@media (min-width: 768px) {
+  .hero {
+    background: -webkit-gradient(linear, left top, right top, from(var(--hero-back)), to(var(--hero-back))), url("/imeges/hero-section/background-hero-tablet.jpg");
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)), url("/imeges/hero-section/background-hero-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background: -webkit-gradient(linear, left top, right top, from(var(--hero-back)), to(var(--hero-back))), url("/imeges/hero-section/background-hero-tablet@2x.jpg");
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)), url("/imeges/hero-section/background-hero-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 @media (min-width: 1200px) {
   .hero {
     font-size: 44px;
     line-height: 1.4;
     padding-top: 200px;
     padding-bottom: 200px;
+    background: -webkit-gradient(linear, left top, right top, from(var(--hero-back)), to(var(--hero-back))), url("/imeges/hero-section/background-hero.jpg");
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)), url("/imeges/hero-section/background-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background: -webkit-gradient(linear, left top, right top, from(var(--hero-back)), to(var(--hero-back))), url("/imeges/hero-section/background-hero@2x.jpg");
+    background: linear-gradient(to right, var(--hero-back), var(--hero-back)), url("/imeges/hero-section/background-hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -1198,8 +1239,6 @@ p {
 }
 .team__stuff-img {
   margin: 0 auto;
-  width: 450px;
-  height: 460px;
 }
 .team__content {
   padding: 30px;
@@ -1243,10 +1282,6 @@ p {
   fill: currentColor;
 }
 @media (min-width: 768px) {
-  .team__stuff-img {
-    width: 354px;
-    height: 374px;
-  }
   .team__item {
     -ms-flex-preferred-size: calc(50% - var(--card-set-gap));
         flex-basis: calc(50% - var(--card-set-gap));
@@ -1261,9 +1296,5 @@ p {
   .team__item {
     -ms-flex-preferred-size: calc(25% - var(--card-set-gap));
         flex-basis: calc(25% - var(--card-set-gap));
-  }
-  .team__stuff-img {
-    width: 270px;
-    height: 260px;
   }
 }/*# sourceMappingURL=main.css.map */
