@@ -1,11 +1,11 @@
 // UTILS
 @import './utils/variables';
 
-// BASE 
+// BASE
 @import './base/base';
 @import './base/reset';
 
-// LAYOUT 
+// LAYOUT
 @import './layout/contact';
 @import './layout/container';
 @import './layout/footer';
@@ -13,7 +13,7 @@
 @import './layout/navigation';
 @import './layout/section-container';
 
-// COMPONENTS 
+// COMPONENTS
 @import './components/activities-section';
 @import './components/backdrop';
 @import './components/buttons';
@@ -25,6 +25,7 @@
 @import './components/hero-section';
 @import './components/logo';
 @import './components/mailing-form';
+@import './components/mobile-menu';
 @import './components/modal';
 @import './components/social-networks';
 @import './components/team-section';

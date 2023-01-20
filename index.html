@@ -25,9 +25,11 @@
                     <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <svg class="header__menu-icon" width="40" height="40">
-                <use href="./imeges/symbol-defs.svg#icon-menu"></use>
-            </svg>
+            <button class="button-burger js-open-menu" type="button">
+                <svg class="header__menu-icon " width="40" height="40">
+                    <use href="./imeges/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
             <ul class="contact">
                 <li class="contact__item">
                     <a class="contact__link" href="mailto:info@devstudio.com">
@@ -344,10 +346,45 @@
         </div>
     </footer>
 
+    <div class="mobile-menu js-menu-container">
+        <button class="mobile-menu__close close-button js-close-menu" type="button">
+            <svg class="close-button__icon" width="18" height="18">
+                <use href="./imeges/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--current"
+                    href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+        </ul>
+        <ul class="mobile-menu__contact">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <div class="mobile-menu__networks">
+            <ul class="mobile-menu__networks-list">
+                <li class="mobile-menu__networks-item"> <a class="mobile-menu__networks-link" href="#"></a>Instagram
+                </li>
+                <li class="mobile-menu__networks-item"> <a class="mobile-menu__networks-link" href="#"></a>Twitter
+                </li>
+                <li class="mobile-menu__networks-item"> <a class="mobile-menu__networks-link" href="#"></a>Facebook
+                </li>
+                <li class="mobile-menu__networks-item"> <a class="mobile-menu__networks-link" href="#"></a>LinkedIn
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="close-button" type="button" data-modal-close>
-                <svg class="close-button__icon" width="18" height="18">
+            <button class="modal__close close-button" type="button" data-modal-close>
+                <svg class="close-button__icon" width="11" height="11">
                     <use href="./imeges/symbol-defs.svg#icon-close-black"></use>
                 </svg>
             </button>
@@ -391,7 +428,7 @@
                         <use href="./imeges/symbol-defs.svg#icon-check"></use>
                     </svg>
                     <label class="form-field__label-checkbox" for="terms-checkbox">Погоджуюся з розсилкою та приймаю
-                        &nbsp; <a class="link" href="#">Умови договору</a></label>
+                        &nbsp;<a class="link" href="#">Умови договору</a></label>
                 </div>
 
                 <div class="form-button">
@@ -400,6 +437,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
