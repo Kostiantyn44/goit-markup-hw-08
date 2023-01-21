@@ -12,15 +12,12 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--card-set-gap));
-    margin-left: calc(-1 * var(--card-set-gap));
+    gap: var(--card-set-gap);
     justify-content: center;
   }
 
   &__item {
-    flex-basis: calc(100% / 100% - var(--card-set-gap));
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
+    flex-basis: 100%;
   }
 
   &__text {
@@ -62,12 +59,12 @@
       text-align: left;
     }
     &__item {
-      flex-basis: calc(100% / 2 - var(--card-set-gap));
+      flex-basis: calc((100% - var(--card-set-gap)) / 2);
     }
   }
   @media (min-width: 1200px) {
     &__item {
-      flex-basis: calc(100% / 4 - var(--card-set-gap));
+      flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
     }
   }
 }
