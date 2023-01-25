@@ -40,19 +40,19 @@
   }
 
   &__icon-antenna::before {
-    background-image: url(../imeges/antenna.svg);
+    background-image: url(../imeges/activities-section/antenna.svg);
   }
 
   &__icon-clock::before {
-    background-image: url(../imeges/clock.svg);
+    background-image: url(../imeges/activities-section/clock.svg);
   }
 
   &__icon-diagram::before {
-    background-image: url(../imeges/diagram.svg);
+    background-image: url(../imeges/activities-section/diagram.svg);
   }
 
   &__icon-astronaut::before {
-    background-image: url(../imeges/astronaut.svg);
+    background-image: url(../imeges/activities-section/astronaut.svg);
   }
   @media (min-width: 768px) {
     &__title {

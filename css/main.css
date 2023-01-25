@@ -416,16 +416,16 @@ p {
   border-radius: 4px;
 }
 .activities__icon-antenna::before {
-  background-image: url(../imeges/antenna.svg);
+  background-image: url(../imeges/activities-section/antenna.svg);
 }
 .activities__icon-clock::before {
-  background-image: url(../imeges/clock.svg);
+  background-image: url(../imeges/activities-section/clock.svg);
 }
 .activities__icon-diagram::before {
-  background-image: url(../imeges/diagram.svg);
+  background-image: url(../imeges/activities-section/diagram.svg);
 }
 .activities__icon-astronaut::before {
-  background-image: url(../imeges/astronaut.svg);
+  background-image: url(../imeges/activities-section/astronaut.svg);
 }
 @media (min-width: 768px) {
   .activities__title {
@@ -524,9 +524,6 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .card__item {
   -ms-flex-preferred-size: 100%;
